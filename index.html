@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html> 
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=5.0, initial-scale=1.0" />
+		<meta name="thumbnail" content="https://www.photoshota.com/promo/screens/scr5.png" />
+		<meta name="theme-color" content="#474747">
+		
+		<title>Photoshota | Online Photo Editor</title>
+		<meta name="description" content="Photoshota Online Photo Editor lets you edit photos, apply effects, filters, add text, crop or resize pictures. Do Online Photo Editing in your browser for free!" />
+		
+		<link rel="apple-touch-icon" href="promo/icon512.png">
+		<link rel="icon" sizes="512x512" href="promo/icon512.png">
+		<link rel="image_src"  type="image/png"  href="promo/icon512.png" />
+		<link rel="manifest" href="manifest.json">
+		<link rel="chrome-webstore-item" href="//chrome.google.com/webstore/detail/fmophgdjdipcbfjiopifpngdjmemonko">
+		
+		<style>		
+			body, button, input, textarea, select {  font-family: "Open Sans", "Segoe UI",  sans-serif;  }
+			body, input, select, button {  font-size: 13px;  }
+			
+			body {  background-image: radial-gradient(rgb(40,40,50), rgb(10, 0, 10));  }
+			#cap { 
+				font-size:1.2em;
+				padding:0 2% 1em 2%; 
+				color:#e6e6e6;
+			}
+			#cap a { color:inherit;  font-weight:bold;  }
+			#cap p { margin-bottom:1.5em;  line-height:1.5em;  }
+			#cap button {  color:white;  background-color:rgba(0,0,0,0.15);  border:2px solid #3482f6; cursor:pointer; font-size:1.3em; padding:0.4em 1em 0.5em 1em;  border-radius:500px;  display:block;  margin:30px auto;  transition: box-shadow .3s;  }
+			#cap button:hover {  box-shadow: 0 0 30px #3482f6;  }
+			#cap h1 { text-align:center;  font-size: 4em;  margin:0.5em 0 0 0;  }
+			
+			#mid {  max-width:1100px;  margin:0px auto;  }
+			#bar {  padding:0.4em 0;  line-height:2.5em;  }
+			#bar a {  text-decoration:none;  font-weight:normal;  margin:0 10px;  bottom:4px;  position:relative;  }
+			
+			
+			
+			.pair {  display:flex;  margin:3em 0;  }
+			.pair div {  width:50%;  }
+			.pair h2 {  margin:0;  }
+			
+			@media (max-width: 600px) {
+			.pair {  display:block;  margin:3em 1em;  }
+			.pair div {  width:100%;  }
+			}
+			
+			.pair p {  margin: 0.2em 0;  opacity:0.6;  }
+			.pair div {padding: 1em 0;}
+		</style>		
+	</head>
+	
+	<body class="theme0">		
+		<!---->
+		<div id="cap">
+			<div id="bar">
+				<img style="width:36px; height:auto; margin:0 6px -6px 0" width="512" height="512" src="promo/icon512.png" alt="Photoshota logo" /> 
+				<b style="font-size:34px;  margin-right:20px">Photoshota</b>
+			</div>
+			
+			<h1>Free Online Photo Editor</h1>
+			<h2 style="text-align:center">Unlock your creativity with the best free photo editor.</h2>
+			<p style="text-align:center; font-size:1em; opacity:0.6">Transform your photos with professional-grade tools in a free online photo editor that works right in your browser. No downloads, no hassle.</p>
+			<button onclick="addPP()">Start using Photoshota</button>
+			
+			<div id="mid">								
+				<div class="pair">
+					<div style="text-align:center;">
+						<img src="img/table.webp" style="width:80%; height:auto;" width="800" height="800" alt="Photo editor on a laptop" />
+					</div>
+					<div>
+						<h2>Fully Local</h2>
+						<p>There are no uploads. Photoshota runs on your device, using your CPU and your GPU. All files open instantly, and never leave your device.</p>
+						
+						<h2>Cost-Effective</h2>
+						<p>Enjoy all the premium features without spending a dime.</p>
+						
+						<h2>Convenient Editor</h2>
+						<p>No need to install heavy software on your device. Just open your browser and start editing.</p>
+						
+						<h2>Runs Everywhere</h2>
+						<p>Our photo editor runs on any device. The better hardware you have, the better it runs.</p>
+						
+						<button onclick="addPP()">Start using Photoshota</button>
+						
+					</div>
+				</div>
+				
+				
+				<div class="pair">
+					<div>
+						
+						<h2>Professional Editor</h2>
+						<p>Photoshota offers a full suite of editing tools, from basic features like cropping and resizing to advanced features such as layering, masking, and blending.</p>
+						
+						<h2>Full PSD support</h2>
+						<p>Photoshota fully supports a popular PSD format, both opening and saving files. It is the main format of Photoshota.</p>
+						
+						<h2>Swiss knife for graphics</h2>
+						<p>Open and edit PNG, JPG, GIF, BMP, WEBP, SVG, PDF, AI, AVIF, DDS, HEIC, TIFF, MP4, TGA, CDR, PDN, EPS, INDD, Figma and 
+						<a target="_blank" href="//github.com/photoshota/photoshota?tab=readme-ov-file#supported-formats">40 other formats</a>.</p>
+					
+						<h2>Perfect RAW support</h2>
+						<p>Photoshota opens DNG, CR2, CR3, NEF, ARW, RW2, RAF, ORF and FFF files. Set the Exposure, Color Balance, 
+						Contrast, Highlights and Shadows, etc.</p>
+						<button onclick="addPP()">Start using Photoshota</button>
+					</div>
+					<div style="text-align:center;">
+						<img src="img/hand_phone.webp" style="width:70%; height:auto;" width="1044" height="1328" alt="Photo editor on a phone" />
+					</div>
+				</div>
+				
+				
+				<div class="pair">
+					<div style="text-align:center">
+						<video style="width:80%; height:auto;" muted loop autoplay>
+						  <source src="img/goats.mp4" type="video/mp4">
+						</video>
+						<!---->
+					</div>
+					<div>
+						<h2>State-of-the-art AI</h2>
+						<p><a target="_blank" href="//x.com/photoshotacom/status/1735723561950539852/video/1">Remove background with one click</a>,
+						or <a target="_blank" href="//x.com/photoshotacom/status/1661425407944425494/video/1">replace any part of an image</a>
+						with a new content through a text description.</p>
+						
+						<h2>All Essential Features</h2>
+						<p>We have Layers, Masks, Layer Styles, Smart Objects, Adjustment Layers, Channels, Paths and more!</p>
+						
+						<h2>Adjustments and Filters</h2>
+						<p>Do you need Levels and Curves? A Gaussian Blur? Or advanced stuff such as Liquify or Puppet Warp? We have it all!</p>
+						
+						<h2>Vector Graphics</h2>
+						<p>Create and edit vector graphics directly within the editor. Perfect for designers working on logos, icons, or illustrations.</p>
+						
+						<button onclick="addPP()">Start using Photoshota</button>
+					</div>
+				</div>
+				
+				<h2 style="text-align:center">Who Can Benefit from our Free Photo Editor?</h2>
+				<div class="pair">
+					<div>
+						<h2>Social Media Enthusiasts</h2>
+						<p>Enhance your photos before sharing them on platforms like Instagram, Facebook, or Twitter. Make every post stand out with unique edits.</p>
+
+						<h2>Students and Educators</h2>
+						<p>Create stunning visuals for presentations, assignments, and more. Our free online photo editor is a great tool for educational projects.</p>
+
+						<h2>Small Business Owners</h2>
+						<p>Design promotional materials, edit product photos, and create engaging content for your website or online store, all without spending on expensive software.</p>
+
+						<h2>Graphic Designers</h2>
+						<p>Whether you’re a freelancer or part of a design team, Photoshota’s free photo editor offers all the features you need to produce professional-quality work.</p>
+							
+						<button onclick="addPP()">Start using Photoshota</button>
+					</div>
+					<div style="text-align:center;">
+						<img src="img/laptop.webp" style="width:80%; height:auto;" width="853" height="853" alt="Freelancer using a photo editor" />
+					</div>
+				</div>
+				
+				<p style="text-align:center">
+				</p>
+			</div>
+		</div>
+		<!---->
+		
+		<script>
+			var cap = document.getElementById("cap"), added=false;
+			var href = window.location.href;
+			var ls = window.localStorage, ppp=null;  if(ls) {  ppp=ls.getItem("_ppp");  if(ppp) ppp=JSON.parse(ppp);  }  if(ppp==null) ppp={};
+			
+			function addPP() {
+				cap.style.display="none";  
+				if(ppp) {  ppp["capShown"]="false";  ls.setItem("_ppp", JSON.stringify(ppp));   }
+				if(added) return;  added=true;  console.log("adding");
+				var fls = [
+					"style/all09.css",
+					"code/ext/ext1727353186.js",
+					"code/dbs/DBS1727686859.js",
+					"code/pp/pp1728070986.js"
+				];
+				for(var i=0; i<fls.length; i++) {
+					var url = (window.location.host=="www.photoshota.com"?"//vecpea.com/":"")+fls[i], isJS = url.endsWith(".js");
+					var el = document.createElement(isJS ? "script" : "link");
+					el.setAttribute(isJS ? "src" : "href",url);
+					if(!isJS) el.setAttribute("rel","stylesheet");
+					else el.async=false;
+					
+					(isJS ? document.body : document.head).appendChild(el);
+				}
+			}
+			
+			if(href.indexOf("#")!=-1 || href.indexOf("=")!=-1 || ppp["capShown"]=="false") addPP();
+			else cap.style.display="";		
+		</script>
+	</body>
+
+</html>
